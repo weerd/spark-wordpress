@@ -38,15 +38,16 @@ Set to `development`, `staging` or `production` depending on environment.
 7) On your local computer, make sure to edit the **hosts** file, and add the domain name for the project that matches what is defined in **/config/env/development.php**:
 
 ```php
-
 // /config/env/development.php
+
 define('WP_HOME', 'http://project-name.dev');
 
 ```
 
-```
+```shell
+# /etc/hosts
 
-// Specified IP is defined in the Vagrantfile
+# Specified IP is defined in the Vagrantfile
 192.168.22.10 project-name.dev
 
 ```
