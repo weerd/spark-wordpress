@@ -7,7 +7,6 @@
 
 
 # WordPress
-.htaccess
 config/env/local.php
 
 public/core/

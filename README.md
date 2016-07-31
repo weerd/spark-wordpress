@@ -48,7 +48,26 @@ define('WP_HOME', 'http://project-name.dev');
 # /etc/hosts
 
 # Specified IP is defined in the Vagrantfile
-192.168.22.10 project-name.dev
+192.168.XX.XX project-name.dev
 
 ```
 
+8) Connect to the MySQL database, either via `vagrant ssh` or using SequelPro and create a new database that corresponds to the database table name defined in the **development.php** file.
+
+
+
+### Vagrant Setup Instructions
+
+After running `vagrant up` and ssh-ing into the vagrant machine using `vagrant ssh`, you need to modify the location specified for the document root, so that Apache knows to refer to the **public** directory and where to find the **index.php** file.
+
+Using your terminal editor of choice, edit the **192.168.XX.XX.xip.io.conf** located at `/etc/apache2/sites-available/` and append `public` to the `DocumentRoot` path statements (there should be two):
+
+```
+DocumentRoot /vagrant/public
+```
+
+Then reload Apache's configuration:
+
+```shell
+$ sudo service apache2 reload
+```
