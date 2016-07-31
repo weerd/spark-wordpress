@@ -4,7 +4,7 @@
 
 ## Setup Instructions 
 
-1) Clone this repository to your local development environment.
+1) Download this repository without the GIT history to your local development environment and rename it for your project.
 
 2) Download a fresh copy of [WordPress](https://wordpress.org/download/).
 
