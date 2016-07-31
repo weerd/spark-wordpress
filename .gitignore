@@ -1,0 +1,16 @@
+# System
+.DS_Store
+
+
+# Vagrant
+.vagrant
+
+
+# WordPress
+.htaccess
+config/env/local.php
+
+public/core/
+public/content/uploads/
+
+!public/content/plugins/**/core
